@@ -462,7 +462,7 @@ static NSString *GetCacheSize() {
                 NSString *title = tabLabels[i];
                 YTSettingsSectionItem *item = [YTSettingsSectionItemClass checkmarkItemWithTitle:title titleDescription:nil selectBlock:^BOOL (YTSettingsCell *cell, NSUInteger arg1) {
                     if (([title isEqualToString:LOC(@"Explore")] && !ytlBool(@"reExplore") && !ytlBool(@"addExplore")) ||
-                        ([title isEqualToString:LOC(@"ShortsTab")] && ytlBool(@"removeShorts")) ||
+                        ([title isEqualToString:LOC(@"ShortsTab")] && True) ||
                         ([title isEqualToString:LOC(@"Subscriptions")] && ytlBool(@"removeSubscriptions")) ||
                         ([title isEqualToString:LOC(@"Library")] && ytlBool(@"removeLibrary"))) {
                             YTAlertView *alertView = [%c(YTAlertView) infoDialog];
