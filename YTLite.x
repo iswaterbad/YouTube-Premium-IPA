@@ -1143,7 +1143,7 @@ static void genImageFromLayer(CALayer *layer, UIColor *backgroundColor, void (^c
     NSMutableArray <YTIPivotBarSupportedRenderers *> *items = [renderer itemsArray];
 
     NSDictionary *identifiersToRemove = @{
-        @"FEshorts": @[@(ytlBool(@"removeShorts")), @(ytlBool(@"reExplore"))],
+        @"FEshorts": @[@(YES), @(ytlBool(@"reExplore"))],
         @"FEsubscriptions": @[@(ytlBool(@"removeSubscriptions"))],
         @"FEuploads": @[@(ytlBool(@"removeUploads"))],
         @"FElibrary": @[@(ytlBool(@"removeLibrary"))]
